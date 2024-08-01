@@ -5,6 +5,9 @@ public class GeneralPage {
     //Locators
     private final By tabLogin=By.xpath("//a[@class='ico-login']");
     private final By tabRegister=By.xpath("//a[@class='ico-register']");
+
+
+
     //Element
     protected WebElement getTabLogin(){
         return Constant.WEBDRIVER.findElement(tabLogin);
@@ -15,6 +18,7 @@ public class GeneralPage {
     }
 
     //Methods
+
     public LoginPage gotoLoginPage(){
         this.getTabLogin().click();
         return new LoginPage();
